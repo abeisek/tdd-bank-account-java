@@ -16,4 +16,10 @@ public class AccountTest {
         assertThat(account.getBalance(), is(100));
     }
 
+    @Test
+    public void startAccountAsZero(){
+        Account account = new Account();
+        assertThat(account.getBalance(), is(0));
+    }
+
 }
